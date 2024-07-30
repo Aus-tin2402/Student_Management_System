@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background-image: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 130vh;
+}
+main form{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main form div{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main form label{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px;
+}
+main form input{
+    width: 350px;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 22px ;
+    font-weight: bolder;
+}
+::placeholder{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+main form div::after{
+    content:"";
+    width: 100%;
+    height: 2px;
+    background-color:#000;
+    display: block;
+    margin: auto;
+    transition: all 0.8s ease-in-out;
+}
+main table{
+   margin: 50px 10px;
+}
+main table tr th{
+    background-color: #000;
+    color: transparent;
+    padding: 10px 10px;
+    text-align: center;
+    /* text-shadow: 2px 2px 0px goldenrod; */
+    font-size: 18px;
+    -webkit-text-stroke: 1px goldenrod;
+}
+main table tr td{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: bolder;
+    font-size: 15px;
+}

@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+marquee{
+    background-color: gray;
+    font-size: 20px;
+    padding: 6px 0px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
+}
+aside form{
+    display: flex;
+    align-items: center;
+    /*  justify-content: center; */
+    flex-direction: column;
+    background-image: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 125vh;
+}
+aside form div{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+aside form div label{
+    color:#000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+    margin:5px 0px;
+}
+aside form div input{
+    width: 350px;
+    border: none;
+    outline: none;
+    background-color:transparent;
+    color: #ccc;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight:bold;
+    font-style: italic;
+    padding: 6px 0px;
+}
+aside form div::after{
+        content:"";
+        width: 100%;
+        height: 2px;
+        background-color:#000;
+        display: block;
+        margin: auto;
+        transition: all 0.8s ease-in-out;
+}
+::placeholder{
+    color: black;
+}
+aside form div textarea{
+    height: 50px;
+    width:250px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #ccc;
+    outline: none;
+}
+aside form div select{
+    width: 150px;
+    padding: 4px 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+aside form table{
+    margin: 10px;
+    width: 350px;
+    border: 2px solid #fff;
+}
+aside table tr th{
+    padding: 6px 8px;
+    color: goldenrod;
+    font-size: 25px;
+}
+aside table tr td{
+    padding:6px 8px ;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: oblique;
+}
+aside table tr td input{
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color: #fff;
+}
+aside table tr td input::placeholder{
+    color:#ffff;
+}
+aside form button{
+    background-color:red;
+    color:black;
+    border: none;
+    outline: none;
+    margin: 5px 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+input[type='number']::-webkit-inner-spin-button,input[type='number']::-webkit-outer-spin-button{
+    margin: 0;
+    -webkit-appearance: none ;
+}
